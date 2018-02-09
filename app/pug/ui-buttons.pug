@@ -1,0 +1,23 @@
+extends layouts/ui-layout.pug
+
+block variables
+    - var title = 'UI Buttons'
+
+block content
+    section.section_ui
+        h1.heading_ui
+            |UI Buttons
+        +button('1','#','fa-arrow-right')
+        br
+        +button('2','#')
+        .button(href='#')
+            | Вперед
+            i.fas.fa-arrow-right
+        .button(href='#') Подробнее
+        .button(href='#') Редактировать
+        .button(href='#') Удалить
+        .button(href='#') Сохранить
+        .button(href='#') Войти
+
+block scripts
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")

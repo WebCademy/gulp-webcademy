@@ -1,7 +1,9 @@
-mixin button(text, link, icon)
+mixin button(text, link, btnclass, icon)
     if icon
-        a.button(href=link) 
-            |#{text}
-            i(class="fas " + icon)
+        a(href=link class="button " + btnclass)
+            | #{text}
+            i(class="fa " + icon)
+            
     else
-        a.button(href=link) #{text}
+        a(href=link class="button " + btnclass)
+            | #{text}

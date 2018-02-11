@@ -65,10 +65,10 @@ gulp.task('styles', function() {
 	}))
 	.pipe(sourcemaps.init())
 	.pipe(less())
-	.pipe(autoprefixer({
+		.pipe(autoprefixer({
 		browsers: ['last 6 versions'],
 		cascade: false
-	}))
+		}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./app/css'))
 	.pipe(browserSync.stream());

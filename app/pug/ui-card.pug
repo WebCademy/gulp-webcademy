@@ -2,39 +2,41 @@ extends layouts/ui-layout.pug
 
 
 block variables
-  - var title = 'UI Card - Карточка пост и портфолио'
+  - var title = 'Карточка пост и портфолио'
   - var pageClass = 'index-page'
 
 block content
   section.section__ui
     h1.heading__ui
     div.container__header
-    h2
+    h2.title
      | Компоненты
+    div.block__title
+      | Карточка - Пост в блоге
     div.box__blog
-     div(class="col-sm-6")
-       block__title
-         | Карточка - Пост в блоге
+     div(class="col-md-4")
+      div.blog__item
        block.card__type 
           img(src='./img/bg/jared-erondu.png',
        alt='New York'
        ).img__poster
        h2.image__caption
         | Поездка в New York пример  длинного названия поста ...
-       span.button
+       span.button__solid
         | Читать
    
     div.box__portfolio
-     div(class="col-sm-6")
-       block__title
-         | Карточка - Работа в Портфолио
-       block.card__type 
+     div(class="col-md-4")
+     block__title
+       | Карточка - Пост в блоге
+       div.portfolio__items
+          block.card__type 
           img(src='./img/bg/freebie_by_sultan_mahamud.jpg',
-       alt='New York'
-       ).img__poster
+        alt='New York'
+        ).img__poster
        h2.image__caption
         | Верстка Landing Page
-       span.button
+       span.button__outline
         | Смотреть кейс       
 
    	
@@ -42,4 +44,4 @@ block content
      //- card__type Карточка - Пост в блоге
      //- card__img
      //- card__text Поездка в New York пример  длинного названия поста ...
-     //- button
+     

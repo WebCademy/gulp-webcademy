@@ -8,22 +8,18 @@ block variables
 block content
   section.section__ui
     h1.heading__ui
-    div.container__header
-    h2.title
-     | Компоненты
-    div.block__title
-      | Карточка - Пост в блоге
-    div.box__blog
-     div(class="col-md-4")
-      div.blog__item
-       block.card__type 
-          img(src='./img/bg/jared-erondu.png',
-       alt='New York'
-       ).img__poster
-       h2.image__caption
-        | Поездка в New York пример  длинного названия поста ...
-       span.button__solid
-        | Читать
+     container
+      row
+       col-md-12
+        h1
+          | Компоненты
+      row   
+       col-md-12
+         h3
+          | Карточка - Пост в блоге
+      col-md-6.col-xl-4
+       +card-post('img/card__post.jpg', 'Поездка в New York пример  длинного названия поста ...','#')
+       
    
     div.box__portfolio
      div(class="col-md-4")

@@ -4,20 +4,19 @@ block variables
     - var title = 'UI Buttons'
 
 block content
-    section.section_ui
-        h1.heading_ui
+    section.section__ui
+        h1.heading__ui
             |UI Buttons
         +button('Вперед','#','', 'fa-arrow-right')
         br
         +button('Подробнее','#', '')
         br
-        +button('Редактировать','#', 'button--edit')
+        +button('Редактировать','#', 'button--edit', 'fa-arrow-left', 'left')
         br
-        +button('Удалить','#', 'button--delete')
+        +button('Удалить','#', 'button--delete', 'fa-trash-alt')
         br
-        +button('Сохранить','#', 'button--save')
+        +button('Сохранить','#', 'button--save', 'fa-save')
         br
         +button('Войти','#', 'button--login')
 
 block scripts
-    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")

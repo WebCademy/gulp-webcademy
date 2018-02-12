@@ -1,32 +1,44 @@
 
-// заголовки 
 
-.heading__1 {
-	font-size: 28px;
+// content
+.content {
+	
+	// заголовки 
+
+h1 {
+	font-size: 24px;
 	font-weight: 800;
+		
+	@media(min-width: 768px){
+		font-size: 28px;
+	}
 }
 
-.heading__2 {
-	font-size: 26px;
+h2 {
+	font-size: 20px;
 	font-weight: 600;
+	
+	@media(min-width: 768px){
+		font-size: 26px;
+	}
 }
 
-.heading__3 {
+h3 {
 	font-size: 24px;
 	font-weight: 800;
 }
 
-.heading__4 {
+h4 {
 	font-size: 20px;
 	font-weight: 800;
 }
 
-.heading__5 {
+h5 {
 	font-size: 18px;
 	font-weight: 800;
 }
 
-.heading__6 {
+h6 {
 	font-size: 16px;
 	font-weight: 800;
 }
@@ -34,33 +46,52 @@
 
 // текст 
 
-.content__text {
-	font-size: 16px;
-	line-height: 2.0;
+p {
+	font-size: 14px;
+	line-height: 1.5;
+	
+	@media(min-width: 768px){
+		font-size: 16px;
+		line-height: 2.0;
+	}
 }
 
 // ссылка в тексте
 
-.content__link {
+a {
 	color: @blue__color;
 }
 
 // список
 
-.content__list {
-
-	list-style: square outside;
+ul {
+	list-style-type: none;
 	
 		li {
-			color: @blue__color;
+			position: relative;
+			color: #000;
 			margin-bottom: 20px;
+			line-height: 1.5;
 			
-			span {
-				color: #000;
+			&:before {
+				content: "";
+				display: block;
+				width: 7px;
+				height: 7px;
+				background: @blue__color;
+				
+				position: absolute;
+				left: -20px;
+				top: 10px;
 			}
-			
 		}
 }
+
+// /content
+}
+
+
+
 
 
 

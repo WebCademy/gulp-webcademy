@@ -1,0 +1,28 @@
+extends layouts/ui-layout.pug
+
+
+block variables
+  - var title = 'Карточка пост и портфолио'
+  - var pageClass = 'index-page'
+
+block content
+  section.section__ui
+    h1.heading__ui
+    container
+      row
+       col-md-12
+        h3
+          | Компоненты
+    container.section-card 
+       row.section-card-post
+         col-md-12.logo__landscape
+          h3.card_title
+           | Карточка - Пост в блоге 
+         col-md-6.col-xl-4
+           +card-post('./img/bg/jared-erondu.png', 'Поездка в New York пример  длинного названия поста ...','#')
+       row.section-card-work 
+         col-md-12.logo__mobile
+          h3.card_title
+           | Карточка - Работа в портфолио
+         col-md-6.col-xl-4
+          +card-portfolio('./img/bg/card_portfolio.jpg', 'Верстка Landing Page','#')

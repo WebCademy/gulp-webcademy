@@ -4,20 +4,20 @@ block variables
     - var title = 'UI Buttons'
 
 block content
-    section.section_ui
-        h1.heading_ui
+    section.section__ui
+        h1.heading__ui
             |UI Buttons
-        +button('Вперед','#','', 'fa-arrow-right')
-        br
-        +button('Подробнее','#', '')
-        br
+        div.container
+            div.section__ui-mb
+                +button('Вперед','#','', 'fa-arrow-right')
+                br
+                +button('Подробнее','#', '')
+                br
 
-        +button('Редактировать','#', 'button--edit', 'fa-arrow-left', 'left')
-        br
-        +button('Удалить','#', 'button--delete', 'fa-trash-alt')
-        br
-        +button('Сохранить','#', 'button--save', 'fa-save')
-        br
-        +button('Войти','#', 'button--login')
-
-block scripts
+                +button('Редактировать','#', 'button--edit', 'fa-arrow-left', 'left')
+                br
+                +button('Удалить','#', 'button--delete', 'fa-trash-alt')
+                br
+                +button('Сохранить','#', 'button--save', 'fa-save')
+                br
+                +button('Войти','#', 'button--login')

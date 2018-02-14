@@ -28,8 +28,11 @@ head
 	
 	<!-- build:cssVendor css/vendor.css -->
 	link(rel="stylesheet", href="libs/bootstrap-4-grid/grid.min.css")
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet">
 	<!-- endbuild -->
+	
+	//- styles
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet")
+		
 
 	<!-- build:cssCustom css/main.css -->
 	link(rel="stylesheet", href="css/main.css")
@@ -50,8 +53,13 @@ body(class=pageClass)
 
 	<!-- build:jsVendor js/vendor.js -->
 	block scripts
-		script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
 	<!-- endbuild -->
+	
+	//- scripts for cdn
+	block scripts
+		script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+
+
 	
 	<!-- build:jsMain js/main.js -->
 	script(src="js/main.js")

@@ -8,36 +8,21 @@ block variables
 block content
   section.section__ui
     h1.heading__ui
-     container
+    container
       row
        col-md-12
-        h1
+        h3
           | Компоненты
-      row   
-       col-md-12
-         h3
-          | Карточка - Пост в блоге
-      col-md-6.col-xl-4
-       +card-post('img/card__post.jpg', 'Поездка в New York пример  длинного названия поста ...','#')
-       
-   
-    div.box__portfolio
-     div(class="col-md-4")
-     block__title
-       | Карточка - Пост в блоге
-       div.portfolio__items
-          block.card__type 
-          img(src='./img/bg/freebie_by_sultan_mahamud.jpg',
-        alt='New York'
-        ).img__poster
-       h2.image__caption
-        | Верстка Landing Page
-       span.button__outline
-        | Смотреть кейс       
-
-   	
-
-     //- card__type Карточка - Пост в блоге
-     //- card__img
-     //- card__text Поездка в New York пример  длинного названия поста ...
-     
+    container.section-card 
+       row.section-card-post
+         col-md-12.logo__landscape
+          h3.card_title
+           | Карточка - Пост в блоге 
+         col-md-6.col-xl-4
+           +card-post('./img/bg/jared-erondu.png', 'Поездка в New York пример  длинного названия поста ...','#')
+       row.section-card-work 
+         col-md-12.logo__mobile
+          h3.card_title
+           | Карточка - Работа в портфолио
+         col-md-6.col-xl-4
+          +card-portfolio('./img/bg/card_portfolio.jpg', 'Верстка Landing Page','#')

@@ -16,40 +16,40 @@
 </head>
 <body class="index-page">
   <section class="section__ui">
-    <h1 class="heading__ui">
-      <container>
-        <row>
-          <col-md-12>
-            <h1>Компоненты</h1>
-          </col-md-12>
-        </row>
-        <row>  
-          <col-md-12>
-            <h3>Карточка - Пост в блоге</h3>
-          </col-md-12>
-        </row>
-      </container>
-    </h1>
-    <div class="box__blog">
-      <div class="col-md-4">
-        <div class="blog__item">
-          <block class="card__type"> <img class="img__poster" src="./img/bg/jared-erondu.png" alt="New York"/></block>
-          <h2 class="image__caption">Поездка в New York пример  длинного названия поста ...</h2><span class="button__solid">Читать</span>
-        </div>
-      </div>
-    </div>
-    <div class="box__portfolio">
-      <div class="col-md-4"></div>
-      <block__title>Карточка - Пост в блоге
-        <div class="portfolio__items">
-          <block class="card__type"> </block><img class="img__poster" src="./img/bg/freebie_by_sultan_mahamud.jpg" alt="New York"/>
-        </div>
-        <h2 class="image__caption">Верстка Landing Page</h2><span class="button__outline">Смотреть кейс       </span>
-      </block__title>
-    </div>
+    <h1 class="heading__ui"></h1>
+    <container>
+      <row>
+        <col-md-12>
+          <h3>Компоненты</h3>
+        </col-md-12>
+      </row>
+    </container>
+    <container class="section-card"> 
+      <row class="section-card-post">
+        <col-md-12 class="logo__landscape">
+          <h3 class="card_title">Карточка - Пост в блоге </h3>
+        </col-md-12>
+        <col-md-6 class="col-xl-4">
+          <div class="card card-post"><img class="card__img card-post__img" src="./img/bg/jared-erondu.png"/>
+            <h2 class="card__title">Поездка в New York пример  длинного названия поста ...</h2><a class="button undefined" href="#">Читать</a>
+          </div>
+        </col-md-6>
+      </row>
+      <row class="section-card-work"> 
+        <col-md-12 class="logo__mobile">
+          <h3 class="card_title">Карточка - Работа в портфолио</h3>
+        </col-md-12>
+        <col-md-6 class="col-xl-4">
+          <div class="card card-portfolio"><img class="card__img card-portfolio__img" src="./img/bg/card_portfolio.jpg"/>
+            <h2 class="card__title">Верстка Landing Page</h2><a class="button undefined" href="#">Смотреть кейс</a>
+          </div>
+        </col-md-6>
+      </row>
+    </container>
   </section><!-- build:jsLibs js/libs.js -->
   <script src="libs/jquery/jquery.min.js"></script><!-- endbuild -->
-<!-- build:jsVendor js/vendor.js --><!-- endbuild -->
+<!-- build:jsVendor js/vendor.js -->
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><!-- endbuild -->
 <!-- build:jsMain js/main.js -->
   <script src="js/main.js"></script><!-- endbuild -->
 </body>

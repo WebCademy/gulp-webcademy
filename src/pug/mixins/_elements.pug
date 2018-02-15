@@ -3,7 +3,7 @@ mixin user_profile (name)
 		p #{name}
 
 mixin checkbox (title)
-	label(class="container")
+	label(class="checkbox__block")
 		p #{title}
 		input(type="checkbox")
 		span(class="checkmark")
@@ -26,7 +26,7 @@ mixin empty_comment_error(error_message_empty)
 
 mixin email_busy(error_title)
 	.email_busy
-		.title
+		.title.
 			#{error_title}
 		.artical
 			p Используйте другой email чтобы создать новый аккаунт.

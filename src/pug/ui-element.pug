@@ -1,0 +1,15 @@
+extends layouts/ui-layout.pug
+
+block variables
+		- var title ="UI elements"
+
+block content
+	h1 Вспомогательные элементы
+	+user_profile("Пользователь")
+	+checkbox("Запомнить меня")
+	+avatar_big("../img/avatar/photo-big.png")
+	+avatar_small("../img/avatar/foto-small-2.png")
+	+input_email_error("Введите email")
+	+empty_comment_error("Комментарий не может быть пустым.")
+	+email_busy(" Данный email уже занят ")
+	+wrong_emailorPass("Неверный email или пароль")

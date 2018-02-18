@@ -16,22 +16,20 @@
 .section_ui-header {
     background-color: #00588b;
 	background-image: url("../img/ui-header/bg.jpg");
-	webkit-background-size: cover;
-	     -o-background-size: cover;
-	       -background-size: cover;
-	background-position:center;
-		width: 100%;
+	width: 100%;
+	height: 200px;
+	display: none;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	    -webkit-align-items: space-between;
+	align-items: space-between;
+    background-size: cover;
+	background-repeat: no-repeat;
+	padding-right: 45px;
+		
+	@media(min-width: 992px){
 		display: flex;
-		-webkit-justify-content: space-between;
-		        justify-content: space-between;
-		    -webkit-align-items: space-between;
-		            align-items: space-between;
-		height: 200px;
-		webkit-background-size: cover;
-	     -o-background-size: cover;
-	       -background-size: cover;
-		background-repeat: no-repeat;
-		padding-right: 45px;
+	}
 }
 
 .section_ui-header-base {
@@ -165,6 +163,8 @@
 .section_ui-header__user-info-name {
 	 font-weight: 700;
 	 font-size: 16px;
+	 color: #FFF;
+	 margin-bottom: 5px;
 }
 
 .section_ui-header__user-info-desc {
@@ -176,9 +176,10 @@
 	width: auto;
 	height: 28px;
 	background-color: #225979;
+	color: #FFF;
 	border-radius:13px;
 	font-size: 14px;
-	padding-top: 4px;
+	padding-top: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 10px;
@@ -186,13 +187,17 @@
 
 /*admin*/
 .section_ui-header-admin {
-	display: flex;
+	display: none;
 	-webkit-align-items: center;
 	align-items: center;
 	background-color: #FFF;
 	color: #000;
 	height: 80px;
 	margin-left: 20px;
+	
+	@media(min-width: 992px){
+		display: flex;
+	}
 }
 
 .section_ui-header-admin-photo {
@@ -256,7 +261,7 @@
 		         justify-content:space-between;
 	  	li {
 	  		padding-left:10px;
-			/*margin-left: 30px;*/
+			margin-bottom: 0;
 		    list-style-type: none;
 				&:before {
 				content:none;

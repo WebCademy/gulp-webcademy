@@ -152,6 +152,96 @@ block content
 
 
 
+    //- Шапка сайта ===========================================================
+    section.section__ui#ui-header
+        h1.heading__ui
+            | Шапка
+        div.container
+            div.content
+                div.section_ui-header-container
+                    div.section_ui-header-desc
+                        |Шапка - Гость
+                    div.section_ui-header
+                        div.section_ui-header-base
+                            include modules/logo.pug
+                            include modules/header-nav.pug
+                        div.section_ui-header__login
+                            div.section_ui-header__login-new
+                                a
+                                     |Регистрация
+                            div.section_ui-header__login-login
+                                a
+                                     |Вход
+                    div.section_ui-header-desc
+                        |Шапка - Пользователь
+                    div.section_ui-header
+                        div.section_ui-header-base
+                            include modules/logo.pug
+                            include modules/header-nav.pug
+                        div.section_ui-header__user
+                            div.section_ui-header__user-photo
+                                img(src="../img/ui-header/photo-admin.png",alt="")      
+                            div.section_ui-header__user-info
+                                div.section_ui-header__user-info-name
+                                    |Юрий Ключевский
+                                div.section_ui-header__user-info-desc
+                                    |Пользователь  
+                                div.section_ui-header__user-info-login
+                                    div.section_ui-header__user-info-login-button
+                                        |Профиль
+                                    div.section_ui-header__user-info-login-button
+                                        |Выход
+                    div.section_ui-header-desc
+                        |Шапка - Администратор
+                        //-Шапка администратора
+                    div.section_ui-header-admin
+                        div.section_ui-header-admin-photo
+                            img(src="../img/ui-header/photo-admin.png",alt="")
+                        div.section_ui-header-admin-info
+                            div.section_ui-header-admin-name  
+                                |Юрий Ключевский
+                            div.section_ui-header-admin-desc
+                                |Администратор  
+                        div.section_ui-header-admin-menu
+                            div.menu-begin
+                                ul
+                                    li
+                                        a(href="#")
+                                            div.menu-icon
+                                                i(class="fas fa-plus-circle")
+                                            |Пост
+                                    li      
+                                         a(href="#")
+                                            div.menu-icon
+                                              i(class="fas fa-plus-circle")
+                                            |Работа
+                                    li      
+                                        a(href="#")
+                                            div.menu-icon
+                                                i(class="fas fa-edit")
+                                            |Обо мне
+                                    li          
+                                        a(href="#")
+                                            div.menu-icon
+                                                 i(class="fas fa-edit")
+                                            |Контакты
+                                    li      
+                                        a(href="#")
+                                            div.menu-icon
+                                               i(class="fas fa-envelope")
+                                            |Сообщения
+                        div.menu-end
+                            a(href="#")
+                                div.menu-icon
+                                    i(class="fas fa-sign-out-alt")
+                                |Выход
+                    div.section_ui-header
+                         div.section_ui-header-base
+                             include modules/logo.pug
+                             include modules/header-nav.pug
+                    div.section_ui-header-desc
+                    
+
     //- Комментарии пользователей и гостей сайта =============================
 
     section.section__ui#ui-comment

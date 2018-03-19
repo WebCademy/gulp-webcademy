@@ -1,0 +1,140 @@
+.button {
+	.transition;
+	display: inline-block;
+	line-height: 1;
+	outline: none;
+	
+	border-width: 2px;
+	border-color: rgb(221, 232, 238);
+	border-style: solid;
+	border-radius: 22px;
+	
+	height: 2.75em;
+	
+	padding-top: 0.68em; // 
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	
+	color: #037EC6;
+	background: #FFF;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 700;
+		
+	&:hover, &:focus {
+		border-color: #DDE8EE;
+		background-color: #DDE8EE;
+	}
+
+	&:active {
+		border-color: #b4dff6;
+		background-color: #b4dff6;
+	}
+} 
+
+.button--edit {
+	.button;
+	color: #FFF;
+	border-color: #ffba00;
+	background-color: #ffba00;
+	
+	&:hover, &:focus {
+		border-color: #ffcf3e;
+		background-color: #ffcf3e;
+	}
+
+	&:active {
+		border-color: #f29a00;
+		background-color: #f29a00;
+	}
+} 
+
+.button--delete {
+	.button;
+	padding: 6px 20px;
+	font-size: 14px;
+	height: 32px;
+	color: #FFF;
+	border-color: #b51919;
+	background-color: #b51919;
+	
+	&:hover, &:focus {
+		border-color: #e70c0c;
+		background-color: #e70c0c;
+	}
+
+	&:active {
+		border-color: #990101;
+		background-color: #990101;
+	}
+} 
+
+.button--profile {
+	.button;
+	padding: 6px 15px;
+	font-size: 13px;
+	height: 26px;
+	color: #FFF;
+	border: none;
+	background-color: rgba(0,0,0,0.25);
+	font-weight: 400;
+	
+	&:hover, &:focus {
+		border: none;
+		background-color: rgba(0,0,0,0.45);
+	}
+
+	&:active {
+		border: none;
+		background-color: rgba(0,0,0,0.55);
+	}
+} 
+
+
+.button--primary {
+	.button;
+	color: #FFF;
+	border-color: #037ec6;
+	background-color: #037ec6;
+	
+	&:hover, &:focus {
+		border-color: #0094eb;
+		background-color: #0094eb;
+	}
+
+	&:active {
+		border-color: #0069a7;
+		background-color: #0069a7;
+	}
+} 
+
+.button--login, a.button--login {
+	.button;
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+  	box-shadow: 0px 6px 16px 0px rgba(23, 50, 66, 0.75);
+	
+	&:hover, &:focus {
+		color: #FFF;
+		border-color: #037ec6;
+		background-color: #037ec6;
+	}
+
+	&:active {
+		color: #FFF;
+		border-color: #006ba9;
+		background-color: #006ba9;
+  		box-shadow: 0px 1px 4px 0px rgba(23, 50, 66, 0.75);
+	}
+} 
+
+
+.button__icon--left {
+	margin-right: 10px;
+	    vertical-align: middle;
+}
+
+.button__icon--right {
+	margin-left: 10px;
+	    vertical-align: middle;
+}

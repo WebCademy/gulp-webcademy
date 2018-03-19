@@ -2,3 +2,23 @@ mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
 		use(xlink:href="img/sprite.svg#" + name)
+
+mixin badge (name)
+	.badge #{name}
+
+mixin header-link(text, link)
+	li.header-nav__item
+		a(target!=attributes.target, class="header-nav__link", class!=attributes.class href=link )= text
+
+mixin header-login-link(text, link)
+	li.header-login__item
+		a(target!=attributes.target, class="header-login__link", class!=attributes.class href=link )= text
+
+mixin logo(title, slogan)
+	.header-logo
+		.header-logo__icon
+			i(class="fas fa-paper-plane")
+		.header-logo__text
+			a.header-logo__title(href="./") #{title}
+			if slogan
+				span.header-logo__subtitle #{slogan}
